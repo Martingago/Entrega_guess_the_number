@@ -26,10 +26,12 @@ Esta página contiene el logotipo de la aplicación, el cual cambia dependiendo 
 
 ### Tutorial
 La página del tutorial recibe el nombre de `tutorialFragment` dentro del esquema anterior. Este fragmento contiene un tutorial de ayuda al jugador sobre cómo jugar. Este componente contiene un botón que redirige al usuario al fragmento de `mainMenuFragment`.
+
 ![Imagen del tutorial de la aplicación](./resources/mockup-tutorial-guess-the-number.png)
 
 ### Gameplay
 Este es el fragmento que contiene la lógica del juego en si. Contiene la interfaz visual con los datos de la partida (vidas restantes, feedback con las pistas...) 
+
 ![Imagen de gameplay de la aplicación](./resources/mockup-gameplay-guess-the-number.png) 
 ![Imagen de gameplay de la aplicación](./resources/mockup-gameplay-01-guess-the-number.png)
 
@@ -38,6 +40,7 @@ Este componente se conecta con 2 fragmentos:
 2. Resultado de partida: `endgameDialogFragment`, este fragmento se activa ante 2 situaciones:
     1. **El jugador pierde la partida**: Se produce cuando el jugador se queda sin vidas y no ha acertado el número secreto.
     2. **El jugador gana la partida**: Se produce cuando el jugador acierta el número secreto.
+
 El fragmento de `gameFragment` (El fragmento que contiene la lógica del juego) enviará al dialog fragment `endgameDialogFragment` los siguientes argumentos:
 1. **numeroGanador**: `Integer` que contiene el número secreto que ha generado la aplicación para la partida actual.
 2. **victoria**: `Boolean` que indica si el jugador ha ganado o perdido la partida. 
@@ -48,6 +51,7 @@ El fragmento de `gameFragment` (El fragmento que contiene la lógica del juego) 
 Es el dialogo que se muestra en pantalla cada vez que termina una partida. Tal como se indicó con anterioridad, recibe 2 argumentos por parte del fragmento `gameFragment`, los cuales son **numeroGanador** y **victoria**, gracias a estos 2 argumentos se puede mostrar al jugador la información correspondiente con el fin de la partida:
 - Cual era el número secreto. Eso se consigue escribiendo el valor de `numeroGanador` en un **textView** del fragmento.
 - Cual ha sido el resultado de la partida. Gracias al valor booleano de **victoria** se puede hacer que el fragmento sea dinamico, pudiendo ser aplicado tanto para victorias como para derrotas atendiendo al valor del argumento recibido.
+
 ![Imagen del dialogo de fin de partida - victoria](./resources/mockup-gameplay-win-guess-the-number.png)
 ![Imagen del dialogo de fin de partida - derrota](./resources/mockup-gameplay-lose-guess-the-number.png) 
 
