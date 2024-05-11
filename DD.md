@@ -27,11 +27,12 @@ Esta página contiene el logotipo de la aplicación, el cual cambia dependiendo 
 ### Tutorial
 La página del tutorial recibe el nombre de `tutorialFragment` dentro del esquema anterior. Este fragmento contiene un tutorial de ayuda al jugador sobre cómo jugar. Este componente contiene un botón que redirige al usuario al fragmento de `mainMenuFragment`.
 
-![Imagen del tutorial de la aplicación](./resources/mockup-tutorial-guess-the-number.png)
+![Imagen del tutorial de la aplicación modo claro](./resources/mockup-turorial-guess-the-number-light.png)
+![Imagen del tutorial de la aplicación modo oscuro](./resources/mockup-tutorial-guess-the-number.png)
 
 ### Gameplay
 Este es el fragmento que contiene la lógica del juego en si. Contiene la interfaz visual con los datos de la partida (vidas restantes, feedback con las pistas...) 
-
+![Imagen de gameplay de la aplicación modo claro](./resources/mockup-gameplay-guess-the-number-light.png) 
 ![Imagen de gameplay de la aplicación](./resources/mockup-gameplay-guess-the-number.png) 
 ![Imagen de gameplay de la aplicación](./resources/mockup-gameplay-01-guess-the-number.png)
 
@@ -52,8 +53,10 @@ Es el dialogo que se muestra en pantalla cada vez que termina una partida. Tal c
 - Cual era el número secreto. Eso se consigue escribiendo el valor de `numeroGanador` en un **textView** del fragmento.
 - Cual ha sido el resultado de la partida. Gracias al valor booleano de **victoria** se puede hacer que el fragmento sea dinamico, pudiendo ser aplicado tanto para victorias como para derrotas atendiendo al valor del argumento recibido.
 
-![Imagen del dialogo de fin de partida - victoria](./resources/mockup-gameplay-win-guess-the-number.png)
+![Imagen del dialogo de fin de partida modo claro - derrota](./resources/mockup-lose-guess-the-number-light.png)
 ![Imagen del dialogo de fin de partida - derrota](./resources/mockup-gameplay-lose-guess-the-number.png) 
+![Imagen del dialogo de fin de partida - victoria](./resources/mockup-gameplay-win-guess-the-number.png)
+
 
 Por otro lado el dialogo cuenta con 2 botones que se corresponden a si el jugador quiere volver a jugar otra partida:
 1. **Si**: Se carga nuevamente el fragmento de `gameFragment` con los datos reseteados para que se pueda llevar a cabo una nueva partida.
