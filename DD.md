@@ -27,7 +27,7 @@ Esta página contiene el logotipo de la aplicación, el cual cambia dependiendo 
 ### Tutorial
 La página del tutorial recibe el nombre de `tutorialFragment` dentro del esquema anterior. Este fragmento contiene un tutorial de ayuda al jugador sobre cómo jugar. Este componente contiene un botón que redirige al usuario al fragmento de `mainMenuFragment`.
 
-![Imagen del tutorial de la aplicación modo claro](./resources/mockup-turorial-guess-the-number-light.png)
+![Imagen del tutorial de la aplicación modo claro](./resources/mockup-tutorial-guess-the-number-light.png)
 ![Imagen del tutorial de la aplicación modo oscuro](./resources/mockup-tutorial-guess-the-number.png)
 
 ### Gameplay
@@ -53,7 +53,7 @@ Es el dialogo que se muestra en pantalla cada vez que termina una partida. Tal c
 - Cual era el número secreto. Eso se consigue escribiendo el valor de `numeroGanador` en un **textView** del fragmento.
 - Cual ha sido el resultado de la partida. Gracias al valor booleano de **victoria** se puede hacer que el fragmento sea dinamico, pudiendo ser aplicado tanto para victorias como para derrotas atendiendo al valor del argumento recibido.
 
-![Imagen del dialogo de fin de partida modo claro - derrota](./resources/mockup-lose-guess-the-number-light.png)
+![Imagen del dialogo de fin de partida modo claro - derrota](./resources/mockup-gameplay-lose-guess-the-number-light.png)
 ![Imagen del dialogo de fin de partida - derrota](./resources/mockup-gameplay-lose-guess-the-number.png) 
 ![Imagen del dialogo de fin de partida - victoria](./resources/mockup-gameplay-win-guess-the-number.png)
 
